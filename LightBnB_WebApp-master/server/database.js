@@ -82,7 +82,6 @@ const getAllProperties = function(options, limit = 10) {
     LIMIT $1;`,
     [limit])
   .then((result) => {
-    console.log(result.rows);
     return result.rows;
   })
   .catch((err) => {
